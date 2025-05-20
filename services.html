@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Ericon Limited | Comprehensive Construction Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-yellow-500 p-2 rounded mr-3">
+                    <i class="fas fa-hard-hat text-white text-2xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-800">ERICON <span class="text-yellow-500">LIMITED</span></h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 hover:text-yellow-500 font-medium">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-yellow-500 font-medium">About</a>
+                <a href="services.html" class="text-yellow-500 font-medium">Services</a>
+                <a href="projects.html" class="text-gray-800 hover:text-yellow-500 font-medium">Projects</a>
+                <a href="contact.html" class="text-gray-800 hover:text-yellow-500 font-medium">Contact</a>
+            </nav>
+            
+            <div class="hidden md:block">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                    Get a Quote
+                </button>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white transform -translate-x-full md:hidden z-50">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="flex items-center">
+                        <div class="bg-yellow-500 p-2 rounded mr-3">
+                            <i class="fas fa-hard-hat text-white text-2xl"></i>
+                        </div>
+                        <h1 class="text-2xl font-bold text-gray-800">ERICON <span class="text-yellow-500">LIMITED</span></h1>
+                    </div>
+                    <button id="close-menu-button" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <nav class="flex flex-col space-y-6">
+                    <a href="index.html" class="text-gray-800 hover:text-yellow-500 font-medium text-lg">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-yellow-500 font-medium text-lg">About</a>
+                    <a href="services.html" class="text-yellow-500 font-medium text-lg">Services</a>
+                    <a href="projects.html" class="text-gray-800 hover:text-yellow-500 font-medium text-lg">Projects</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-yellow-500 font-medium text-lg">Contact</a>
+                </nav>
+                
+                <div class="mt-8">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full font-medium w-full transition duration-300">
+                        Get a Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="services-hero flex items-center pt-20">
+        <div class="container mx-auto px-4 text-white">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Our <span class="text-yellow-500">Services</span></h1>
+                <p class="text-lg md:text-xl mb-8">Comprehensive construction solutions tailored to meet your project needs, from concept to completion.</p>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+                    <span>/</span>
+                    <span class="text-yellow-500">Services</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Building <span class="text-yellow-500">Solutions</span> That Last</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">With over 25 years of experience, Ericon Limited offers a full range of construction services designed to meet the diverse needs of our clients. Our integrated approach ensures seamless project delivery from initial planning through final construction.</p>
+            </div>
+            
+            <!-- Services Tabs -->
+            <div class="mb-12">
+                <div class="flex flex-wrap justify-center border-b border-gray-200 mb-8 nav-tabs">
+                    <button class="px-6 py-3 font-medium text-gray-800 hover:text-yellow-500 transition duration-300 service-tab active" data-tab="commercial">Commercial</button>
+                    <button class="px-6 py-3 font-medium text-gray-800 hover:text-yellow-500 transition duration-300 service-tab" data-tab="residential">Residential</button>
+                    <button class="px-6 py-3 font-medium text-gray-800 hover:text-yellow-500 transition duration-300 service-tab" data-tab="industrial">Industrial</button>
+                    <button class="px-6 py-3 font-medium text-gray-800 hover:text-yellow-500 transition duration-300 service-tab" data-tab="specialized">Specialized</button>
+                </div>
+                
+                <div id="commercial" class="tab-content active">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Commercial Service 1 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Office Buildings" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Office Buildings</h3>
+                                <p class="text-gray-600 mb-4">From small professional offices to corporate headquarters, we create functional, inspiring workspaces.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Commercial Service 2 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Retail Spaces" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Retail & Commercial Spaces</h3>
+                                <p class="text-gray-600 mb-4">Specialized construction for shopping centers, restaurants, and storefronts that attract customers.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Commercial Service 3 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hospitality" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Hospitality Facilities</h3>
+                                <p class="text-gray-600 mb-4">Hotels, resorts, and entertainment venues built for comfort, durability, and guest experience.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="residential" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Residential Service 1 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Custom Homes" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Custom Home Construction</h3>
+                                <p class="text-gray-600 mb-4">Bespoke residential properties designed to your exact specifications and lifestyle needs.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Residential Service 2 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1600585152915-d208beb3a5d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Multi-Family" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Multi-Family Housing</h3>
+                                <p class="text-gray-600 mb-4">Apartments, condominiums, and townhomes built with community living in mind.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Residential Service 3 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Renovations" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Home Renovations</h3>
+                                <p class="text-gray-600 mb-4">Transform your existing space with our expert remodeling and renovation services.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="industrial" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Industrial Service 1 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2144&q=80" alt="Manufacturing" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Manufacturing Facilities</h3>
+                                <p class="text-gray-600 mb-4">Purpose-built industrial spaces designed for efficiency, safety, and productivity.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Industrial Service 2 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Warehouses" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Warehouses & Distribution Centers</h3>
+                                <p class="text-gray-600 mb-4">Optimized storage solutions with attention to logistics, accessibility, and future expansion.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Industrial Service 3 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1605153864431-9b7dcd0c8f1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Processing" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Processing Plants</h3>
+                                <p class="text-gray-600 mb-4">Specialized construction for food processing, chemical plants, and other industrial applications.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="specialized" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Specialized Service 1 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1581093196278-c5fbbdd5ab5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Green Building" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Green Building & Sustainability</h3>
+                                <p class="text-gray-600 mb-4">LEED-certified construction and energy-efficient building solutions for a sustainable future.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Specialized Service 2 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Historic" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Historic Restoration</h3>
+                                <p class="text-gray-600 mb-4">Preserving architectural heritage with meticulous attention to historical accuracy and modern functionality.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Specialized Service 3 -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="h-48 bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1581093450021-528aab3615a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Design-Build" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Design-Build Services</h3>
+                                <p class="text-gray-600 mb-4">Streamlined project delivery with single-source responsibility from concept through construction.</p>
+                                <a href="#" class="text-yellow-500 font-medium inline-flex items-center">
+                                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-full font-medium transition duration-300">
+                    View All Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our <span class="text-yellow-500">Process</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A structured approach that ensures quality, efficiency, and client satisfaction at every stage.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- Process Step 1 -->
+                <div class="process-step mb-12">
+                    <div class="process-icon">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Consultation & Planning</h3>
+                        <p class="text-gray-600 mb-4">We begin by understanding your vision, requirements, and budget. Our team conducts site evaluations and develops preliminary concepts.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Needs Assessment</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Feasibility Study</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Budget Planning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Process Step 2 -->
+                <div class="process-step mb-12">
+                    <div class="process-icon">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Design & Engineering</h3>
+                        <p class="text-gray-600 mb-4">Our architects and engineers translate your vision into detailed plans, incorporating functionality, aesthetics, and regulatory compliance.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Concept Development</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Technical Drawings</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Permit Acquisition</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Process Step 3 -->
+                <div class="process-step mb-12">
+                    <div class="process-icon">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Preconstruction</h3>
+                        <p class="text-gray-600 mb-4">We finalize all project details, including scheduling, material selection, subcontractor coordination, and logistics planning.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Material Procurement</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Team Assembly</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Safety Planning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Process Step 4 -->
+                <div class="process-step mb-12">
+                    <div class="process-icon">
+                        <span class="font-bold">4</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Construction</h3>
+                        <p class="text-gray-600 mb-4">Our skilled craftsmen execute the project with precision, maintaining strict quality control and open communication throughout.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Quality Control</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Progress Reporting</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Problem Resolution</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Process Step 5 -->
+                <div class="process-step">
+                    <div class="process-icon">
+                        <span class="font-bold">5</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Project Closeout</h3>
+                        <p class="text-gray-600 mb-4">We conduct final inspections, provide documentation, and ensure your complete satisfaction before handing over the completed project.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Final Walkthrough</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Warranty Information</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Maintenance Guidance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Choose <span class="text-yellow-500">Ericon Limited</span></h2>
+                    <p class="text-gray-600 mb-6">In an industry where quality and reliability matter most, Ericon Limited stands apart through our commitment to excellence, innovation, and client satisfaction.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-yellow-500 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-award text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Proven Track Record</h4>
+                                <p class="text-gray-600">Over 25 years of successful project delivery with hundreds of satisfied clients.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-yellow-500 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-users-cog text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Expert Team</h4>
+                                <p class="text-gray-600">Highly skilled professionals with specialized expertise across all construction disciplines.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-yellow-500 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-shield-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Safety First</h4>
+                                <p class="text-gray-600">Industry-leading safety protocols with an exemplary safety record.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-yellow-500 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-hand-holding-usd text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Transparent Pricing</h4>
+                                <p class="text-gray-600">Clear, competitive pricing with no hidden costs or surprises.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Request a <span class="text-yellow-500">Free Consultation</span></h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                    <option value="">Select a service</option>
+                                    <option value="commercial">Commercial Construction</option>
+                                    <option value="residential">Residential Construction</option>
+                                    <option value="industrial">Industrial Construction</option>
+                                    <option value="renovation">Renovation & Remodeling</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Project Details</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">
+                                Request Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Build Something <span class="text-yellow-500">Amazing</span></h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">Whether you're planning a new construction project or need expert renovation services, our team is ready to bring your vision to life.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-full font-medium transition duration-300">
+                    Get Started
+                </a>
+                <a href="tel:+15551234567" class="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-full font-medium transition duration-300">
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-500 p-2 rounded mr-3">
+                            <i class="fas fa-hard-hat text-white text-2xl"></i>
+                        </div>
+                        <h1 class="text-2xl font-bold">ERICON <span class="text-yellow-500">LIMITED</span></h1>
+                    </div>
+                    <p class="text-gray-400 mb-6">Building excellence with integrity and innovation since 1995.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-yellow-500 transition duration-300">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Commercial Construction</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Residential Construction</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Industrial Construction</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Renovation & Remodeling</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1 mr-3"></i>
+                            <span>123 Construction Avenue, Building City, BC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-yellow-500 mr-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-yellow-500 mr-3"></i>
+                            <span>info@ericonlimited.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2023 Ericon Limited. All Rights Reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // Services Tab Functionality
+        const tabs = document.querySelectorAll('.service-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

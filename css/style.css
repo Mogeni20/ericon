@@ -1,0 +1,181 @@
+
+    /* Index CSS */
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+    }
+    
+    .project-card {
+        transition: all 0.3s ease;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .counter-item {
+        position: relative;
+    }
+    
+    .counter-item::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .counter-item:last-child::after {
+        display: none;
+    }
+    
+    .testimonial-card {
+        background: linear-gradient(145deg, #ffffff, #f1f1f1);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .mobile-menu {
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-menu.active {
+        transform: translateX(0);
+    }
+    /* About us CSS */
+    .about-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1581093450021-528aab3615a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+    }
+    
+    .timeline-item {
+        position: relative;
+        padding-left: 80px;
+    }
+    
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background-color: #e5e7eb;
+    }
+    
+    .timeline-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #f59e0b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    .values-card {
+        transition: all 0.3s ease;
+    }
+    
+    .values-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .mobile-menu {
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-menu.active {
+        transform: translateX(0);
+    }
+
+    /* Services CSS */
+  
+        .services-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-bottom-color: #f59e0b;
+        }
+        
+        .process-step {
+            position: relative;
+            padding-left: 80px;
+        }
+        
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #e5e7eb;
+        }
+        
+        .process-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #f59e0b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .nav-tabs .active {
+            color: #f59e0b;
+            border-bottom: 3px solid #f59e0b;
+        }
+    
